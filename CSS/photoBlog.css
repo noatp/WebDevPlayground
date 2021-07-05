@@ -1,0 +1,15 @@
+img {
+	width: 30%;
+	margin: calc(10%/6);
+}
+
+#name {
+	text-transform: uppercase;
+	border-bottom: 2px solid #060050;
+	width: 30%;
+	margin-left: calc(10%/6);
+	padding: 0.8em 0em 0.8em 0em;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.3em;
+	color: #060050;
+}
