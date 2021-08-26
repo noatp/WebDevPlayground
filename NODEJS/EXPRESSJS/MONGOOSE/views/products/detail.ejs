@@ -9,7 +9,13 @@
 <body>
     <h1><%= product.name %> </h1>
     <div>Price: $<%= product.price %> </div>
-    <div>Category: <%= product.category %> </div>
+    <div>Category: <a href="/products?category=<%= product.category %>"><%= product.category %></a> </div>
     <div><a href="/products">Back to all products</a></div>
+    <div><a href="/products/<%= product._id %>/edit ">Edit this product</a></div>
+    <div>
+        <form action="/products/<%= product._id %>?_method=DELETE" method="POST">
+            <button type="submit">Delete</button>
+        </form>
+</div>
 </body>
 </html>
